@@ -108,6 +108,7 @@ label {
   color: rgb(255, 255, 255);
   font-size: 1.3rem;
   text-shadow: 0 0 10px black;
+  margin-block: .2rem;
 }
 
 input {
@@ -115,7 +116,7 @@ input {
   border-radius: 5px;
   border: none;
   outline: none;
-  transition: border .3s ease;
+  transition: box-shadow .3s ease;
 }
 
 .button-container{
@@ -150,11 +151,16 @@ input {
 }
 
 input.warning {
-  border: 1px solid red;
+  box-shadow: 0 0 5px red ;
 }
 
-input:focus {
-  border: 1px solid blue;
+.warning-text {
+  color: red;
+  margin-block: .4rem;
+}
+
+input:not(input.warning):focus {
+  box-shadow: 0 0 5px blue;
 }
 
 @media screen and (min-width:800px) {
