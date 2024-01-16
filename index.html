@@ -19,28 +19,28 @@
       <form>
         <div class="form-wrapper">
           <label for="firstName">First Name</label>
-          <input type="text">
+          <input type="text" name="firstName"> <span class="error"></span>
         </div>
         <div class="form-wrapper">
           <label for="lastName">Last Name</label>
-          <input type="text">
+          <input type="text" name="lastName"> <span class="error"></span>
         </div>
         <div class="form-wrapper">
           <label for="email">email</label>
-          <input type="email">
+          <input type="email" name="email"> <span class="error"></span>
         </div>
         <div class="form-wrapper">
           <label for="phone-number">phone number</label>
-          <input type="tel">
+          <input type="tel" name="tel"> <span class="error"></span>
         </div>
         <div class="form-wrapper">
           <label for="password">password</label>
-          <input class="warning" type="password">
+          <input type="password" name="password" id="password"><span class="error"></span>
         </div>
         <div class="form-wrapper">
           <label for="confrime-password">confrime password</label>
-          <input class="warning" type="password">
-          <p class="warning-text">* password does not match</p>
+          <input type="password" name="confirmPassword"> 
+          <span class="error"></span>
         </div>
         <div class="button-container">
           <button>Submit</button>
@@ -51,4 +51,5 @@
   </div>
   
 </body>
+<script src="./validation.js"></script>
 </html>
